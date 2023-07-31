@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let apiKey = " PUT_API_KEY_HERE"
+
 @main
 struct Vision_App_DEMO_1App: App {
     var body: some Scene {

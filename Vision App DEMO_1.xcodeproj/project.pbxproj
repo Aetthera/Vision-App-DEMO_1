@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		378BD2922A6061DC00AEE992 /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 378BD2912A6061DC00AEE992 /* XCAFootballDataClient */; };
+		378BD2952A6066E500AEE992 /* StandingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378BD2942A6066E500AEE992 /* StandingsTableView.swift */; };
+		378BD2982A60680200AEE992 /* StandingsTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378BD2972A60680200AEE992 /* StandingsTableObservable.swift */; };
+		378BD29A2A60686300AEE992 /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378BD2992A60686300AEE992 /* FetchPhase.swift */; };
+		378BD29E2A606D6700AEE992 /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 378BD29C2A606D6700AEE992 /* scorers.json */; };
+		378BD29F2A606D6700AEE992 /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 378BD29D2A606D6700AEE992 /* standings.json */; };
+		378BD2A12A606DB200AEE992 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378BD2A02A606DB200AEE992 /* Utility.swift */; };
 		37CE5C212A587AD600D6BCAC /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 37CE5C202A587AD600D6BCAC /* RealityKitContent */; };
 		37CE5C232A587AD600D6BCAC /* Vision_App_DEMO_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE5C222A587AD600D6BCAC /* Vision_App_DEMO_1App.swift */; };
 		37CE5C252A587AD600D6BCAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE5C242A587AD600D6BCAC /* ContentView.swift */; };
@@ -15,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		378BD2942A6066E500AEE992 /* StandingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableView.swift; sourceTree = "<group>"; };
+		378BD2972A60680200AEE992 /* StandingsTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableObservable.swift; sourceTree = "<group>"; };
+		378BD2992A60686300AEE992 /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
+		378BD29C2A606D6700AEE992 /* scorers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scorers.json; sourceTree = "<group>"; };
+		378BD29D2A606D6700AEE992 /* standings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
+		378BD2A02A606DB200AEE992 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		37CE5C1B2A587AD600D6BCAC /* Vision App DEMO_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision App DEMO_1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CE5C1F2A587AD600D6BCAC /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		37CE5C222A587AD600D6BCAC /* Vision_App_DEMO_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision_App_DEMO_1App.swift; sourceTree = "<group>"; };
@@ -29,12 +42,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CE5C212A587AD600D6BCAC /* RealityKitContent in Frameworks */,
+				378BD2922A6061DC00AEE992 /* XCAFootballDataClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		378BD2932A6066CC00AEE992 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				378BD2942A6066E500AEE992 /* StandingsTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		378BD2962A6067CD00AEE992 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				378BD2972A60680200AEE992 /* StandingsTableObservable.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		378BD29B2A606C4100AEE992 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				378BD29C2A606D6700AEE992 /* scorers.json */,
+				378BD29D2A606D6700AEE992 /* standings.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		37CE5C122A587AD600D6BCAC = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +94,15 @@
 		37CE5C1D2A587AD600D6BCAC /* Vision App DEMO_1 */ = {
 			isa = PBXGroup;
 			children = (
+				378BD29B2A606C4100AEE992 /* Stubs */,
+				378BD2962A6067CD00AEE992 /* Observables */,
+				378BD2932A6066CC00AEE992 /* Views */,
 				37CE5C222A587AD600D6BCAC /* Vision_App_DEMO_1App.swift */,
 				37CE5C242A587AD600D6BCAC /* ContentView.swift */,
 				37CE5C262A587AD900D6BCAC /* Assets.xcassets */,
 				37CE5C282A587AD900D6BCAC /* Preview Content */,
+				378BD2992A60686300AEE992 /* FetchPhase.swift */,
+				378BD2A02A606DB200AEE992 /* Utility.swift */,
 			);
 			path = "Vision App DEMO_1";
 			sourceTree = "<group>";
@@ -97,6 +141,7 @@
 			name = "Vision App DEMO_1";
 			packageProductDependencies = (
 				37CE5C202A587AD600D6BCAC /* RealityKitContent */,
+				378BD2912A6061DC00AEE992 /* XCAFootballDataClient */,
 			);
 			productName = "Vision App DEMO_1";
 			productReference = 37CE5C1B2A587AD600D6BCAC /* Vision App DEMO_1.app */;
@@ -126,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 37CE5C122A587AD600D6BCAC;
+			packageReferences = (
+				378BD2902A6061DC00AEE992 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */,
+			);
 			productRefGroup = 37CE5C1C2A587AD600D6BCAC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +188,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378BD29E2A606D6700AEE992 /* scorers.json in Resources */,
+				378BD29F2A606D6700AEE992 /* standings.json in Resources */,
 				37CE5C2A2A587AD900D6BCAC /* Preview Assets.xcassets in Resources */,
 				37CE5C272A587AD900D6BCAC /* Assets.xcassets in Resources */,
 			);
@@ -152,6 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378BD29A2A60686300AEE992 /* FetchPhase.swift in Sources */,
+				378BD2952A6066E500AEE992 /* StandingsTableView.swift in Sources */,
+				378BD2A12A606DB200AEE992 /* Utility.swift in Sources */,
+				378BD2982A60680200AEE992 /* StandingsTableObservable.swift in Sources */,
 				37CE5C252A587AD600D6BCAC /* ContentView.swift in Sources */,
 				37CE5C232A587AD600D6BCAC /* Vision_App_DEMO_1App.swift in Sources */,
 			);
@@ -352,7 +406,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		378BD2902A6061DC00AEE992 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAFootballDataClient";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		378BD2912A6061DC00AEE992 /* XCAFootballDataClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 378BD2902A6061DC00AEE992 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */;
+			productName = XCAFootballDataClient;
+		};
 		37CE5C202A587AD600D6BCAC /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
